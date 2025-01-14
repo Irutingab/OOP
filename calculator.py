@@ -29,6 +29,7 @@ class Calculator:
             print(f"{key}. {name}")
 
     def get_operation_choice(self):
+        
         while True:
             choice = input("Enter the number corresponding to the operation (1-4) or 'q' to quit: ")
             if choice in self.operations or choice == 'q':
