@@ -6,7 +6,7 @@ class Calculator:
             "3": ("Multiplication", self.multiply),
             "4": ("Division", self.divide),
         }
-
+        
     def add(self, a, b):
         return a + b
 
