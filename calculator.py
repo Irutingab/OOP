@@ -7,15 +7,15 @@ class Calculator:
             "4": ("Division", self.divide),
         }
 
-    def add(a, b):
+    def add(self, a, b):
         return a + b
 
-    def subtract(a, b):
+    def subtract(self, a, b):
         return a - b
 
-    def multiply(a, b):
+    def multiply(self, a, b):
         return a * b
-    def divide(a, b):
+    def divide(self, a, b):
         
         if b != 0:
             return a / b
@@ -25,7 +25,8 @@ class Calculator:
         
         print("Welcome to Ray's Calculator!")
         print("Choose an operation:")
-        for key, (name, _) in self.operations.items():
+        for key, (name, _) in self.operations.items():#key-value pair maps a menu choice to an operation.
+
             print(f"{key}. {name}")
 
     def get_operation_choice(self):
@@ -37,6 +38,7 @@ class Calculator:
             print("Invalid choice. Please try again.")
 
     def get_numbers(self):
+        
         while True:
             try:
                 num1 = float(input("Enter the first number: "))
